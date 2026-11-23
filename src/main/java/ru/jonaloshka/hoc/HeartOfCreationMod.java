@@ -79,7 +79,7 @@ public class HeartOfCreationMod implements ModInitializer {
             }))
             .then(CommandManager.literal("buildmap").executes(ctx -> {
                 ServerPlayerEntity p = ctx.getSource().getPlayerOrThrow();
-                buildStoryMap(p);
+                ru.jonaloshka.hoc.core.StoryMapGenerator.buildFullWorld(p);
                 return 1;
             }))
         );
