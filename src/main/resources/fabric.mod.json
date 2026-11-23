@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "hoc",
+  "version": "${version}",
+  "name": "Джоналошка: Сердце Мироздания",
+  "description": "Сюжетный кроссовер по мотивам Сердец Вселенной и JDH.",
+  "authors": ["Jonaloshka Project"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["ru.jonaloshka.hoc.HeartOfCreationMod"],
+    "client": ["ru.jonaloshka.hoc.client.HeartOfCreationClient"]
+  },
+  "mixins": [
+    "hoc.mixins.json",
+    { "config": "hoc.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
